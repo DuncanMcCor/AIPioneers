@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Turing: The Father of Modern Computing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        .presentation-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+            position: relative;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        .nav-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
+        .nav-button.prev {
+            background-color: #d1d5db;
+            color: #374151;
+        }
+        .nav-button.prev:hover {
+            background-color: #a3aab6;
+        }
+        .nav-button.next {
+            background-color: #2563eb;
+            color: #ffffff;
+        }
+        .nav-button.next:hover {
+            background-color: #1d4ed8;
+        }
+        .resource-button {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            background-color: #6366f1;
+            color: #ffffff;
+            transition: background-color 0.2s;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+        .resource-button:hover {
+            background-color: #4f46e5;
+        }
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        .image-container img {
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-height: 250px;
+            object-fit: cover;
+            width: 100%;
+            max-width: 400px;
+        }
+        h1, h2, h3 {
+            color: #1f2937;
+            font-weight: 700;
+        }
+        p {
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slides -->
+        <div id="slide1" class="slide active">
+            <h1 class="text-4xl text-center mb-6">Alan Turing: The Father of Modern Computing</h1>
+            <p class="text-lg text-center leading-relaxed">
+                Explore the life, contributions, and enduring legacy of Alan Turing, a visionary who laid the groundwork for the digital world we live in today.
+            </p>
+            <div class="image-container">
+                <img src="https://placehold.co/400x250/d1d5db/374151?text=Alan+Turing" alt="Portrait of Alan Turing">
+            </div>
+        </div>
+
+        <div id="slide2" class="slide">
+            <h2 class="text-3xl mb-4">Early Life and Education</h2>
+            <p class="text-lg mb-4 leading-relaxed">
+                Born in London in 1912, Alan Mathison Turing showed a remarkable aptitude for mathematics and science from a young age. He attended King's College, Cambridge, and later earned his PhD at Princeton University. His unconventional thinking often put him at odds with traditional education, but it was this very genius that would later change the world.
+            </p>
+            <div class="image-container">
+                <img src="https://placehold.co/400x250/e5e7eb/6b7280?text=Cambridge+University" alt="Image of Cambridge University">
+            </div>
+            <div class="mt-4">
+                <a href="https://www.youtube.com/watch?v=Fj2F5v7K15E" target="_blank" class="resource-button">Watch a video on Turing's early life</a>
+            </div>
+        </div>
+
+        <div id="slide3" class="slide">
+            <h2 class="text-3xl mb-4">World War II and The Enigma Code</h2>
+            <p class="text-lg mb-4 leading-relaxed">
+                During World War II, Turing was a key figure at Bletchley Park, Britain's codebreaking center. He played a pivotal role in creating the "Bombe," an electro-mechanical device that helped decipher encrypted messages from the German Enigma machine. This work is credited with significantly shortening the war and saving countless lives.
+            </p>
+            <div class="image-container">
+                <img src="https://placehold.co/400x250/d1d5db/374151?text=Bombe+Machine" alt="Image of the Bombe machine">
+            </div>
+            <div class="mt-4">
+                <a href="https://www.youtube.com/watch?v=R-xT1yA9o6k" target="_blank" class="resource-button">See an illustration of the Enigma machine</a>
+            </div>
+        </div>
+
+        <div id="slide4" class="slide">
+            <h2 class="text-3xl mb-4">Foundational Contributions to AI</h2>
+            <p class="text-lg mb-4 leading-relaxed">
+                Turing is considered the father of artificial intelligence. In his 1950 paper, "Computing Machinery and Intelligence," he proposed the "Turing Test" as a way to determine if a machine could exhibit intelligent behavior indistinguishable from that of a human. This test remains a benchmark and a philosophical cornerstone in the field of AI today.
+            </p>
+            <div class="image-container">
+                <img src="https://placehold.co/400x250/e5e7eb/6b7280?text=The+Turing+Test" alt="A diagram of the Turing Test setup">
+            </div>
+            <div class="mt-4">
+                <a href="https://www.youtube.com/watch?v=3wB-y7T9-jI" target="_blank" class="resource-button">Watch a video explaining the Turing Test</a>
+            </div>
+        </div>
+        
+        <div id="slide5" class="slide">
+            <h2 class="text-3xl mb-4">Modern Day Influence</h2>
+            <p class="text-lg mb-4 leading-relaxed">
+                The concepts from Turing's "Universal Machine" form the basis of all modern digital computers, and his ideas on learning machines and neural networks were decades ahead of their time. His legacy is found in every computer, smartphone, and AI system, from search engines to large language models.
+            </p>
+            <div class="image-container">
+                <img src="https://placehold.co/400x250/d1d5db/374151?text=Modern+AI+Illustration" alt="An illustration of modern AI and computing">
+            </div>
+            <div class="mt-4">
+                <a href="https://www.youtube.com/watch?v=F2T7e7l6x4A" target="_blank" class="resource-button">Learn more about Turing's influence on AI</a>
+            </div>
+        </div>
+        
+        <div id="slide6" class="slide">
+            <h2 class="text-3xl mb-4">Conclusion</h2>
+            <p class="text-lg mb-4 leading-relaxed">
+                Alan Turing's life was tragically cut short, but his work left an indelible mark on the world. His foundational contributions to computer science and AI have made him a true visionary whose ideas continue to shape our future.
+            </p>
+            <div class="image-container">
+                <img src="https://placehold.co/400x250/e5e7eb/6b7280?text=Digital+Legacy" alt="An image representing a digital legacy">
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button id="prevBtn" class="nav-button prev" style="visibility: hidden;">Previous</button>
+            <button id="nextBtn" class="nav-button next">Next</button>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+            updateButtons();
+        }
+
+        function updateButtons() {
+            // Hide/show previous button on first slide
+            if (currentSlide === 0) {
+                prevBtn.style.visibility = 'hidden';
+            } else {
+                prevBtn.style.visibility = 'visible';
+            }
+            // Hide/show next button on last slide
+            if (currentSlide === slides.length - 1) {
+                nextBtn.style.visibility = 'hidden';
+            } else {
+                nextBtn.style.visibility = 'visible';
+            }
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        });
+
+        // Initialize the presentation on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
