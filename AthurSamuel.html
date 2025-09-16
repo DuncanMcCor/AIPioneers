@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Samuel: Pioneer in AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        .bg-slide-1 { background-color: #d1d5db; }
+        .bg-slide-2 { background-color: #f3f4f6; }
+        .bg-slide-3 { background-color: #e5e7eb; }
+        .bg-slide-4 { background-color: #f8fafc; }
+        .button {
+            display: inline-block;
+            background-color: #1e3a8a;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin: 0.5rem;
+        }
+        .button:hover {
+            background-color: #1c326d;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.15), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Slide 1: Introduction -->
+    <div id="slide1" class="slide bg-slide-1">
+        <div class="max-w-4xl p-8 bg-white rounded-2xl shadow-xl flex flex-col items-center">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Arthur Samuel</h1>
+            <h2 class="text-xl sm:text-2xl font-light text-blue-600 mb-8">Pioneer of Machine Learning and AI</h2>
+            <img src="https://placehold.co/400x400/94A3B8/ffffff?text=Arthur+Samuel" alt="A photo of Arthur Samuel" class="rounded-xl shadow-lg mb-8 w-full max-w-sm">
+            <p class="text-lg text-gray-700 leading-relaxed max-w-2xl">
+                Arthur Samuel was a prominent American pioneer in the field of artificial intelligence and computer gaming. He is widely recognized for his groundbreaking work that demonstrated the potential for computers to learn from their own experience. His innovative work laid the foundation for modern machine learning.
+            </p>
+        </div>
+    </div>
+
+    <!-- Slide 2: The Checkers Program -->
+    <div id="slide2" class="slide bg-slide-2">
+        <div class="max-w-4xl p-8 bg-white rounded-2xl shadow-xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">The Checkers-Playing Program</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                In the 1950s, while at IBM, Samuel created a checkers-playing program. What made it revolutionary was its ability to improve its own performance through experience. This was a radical idea at the time, as most programs were simply a set of instructions.
+            </p>
+            <ul class="text-left text-gray-700 list-disc list-inside space-y-2 mb-6 text-lg max-w-xl mx-auto">
+                <li><strong class="font-semibold text-blue-600">Learning through Rote:</strong> The program would memorize successful moves and board positions to use them in the future.</li>
+                <li><strong class="font-semibold text-blue-600">Generalization Learning:</strong> It would analyze which factors led to a win and adjust a "scoring polynomial" to evaluate positions more accurately.</li>
+                <li><strong class="font-semibold text-blue-600">Minimax Strategy:</strong> It used a search algorithm to look ahead at potential moves, anticipating the opponent's best counter-move.</li>
+            </ul>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                The program became a global sensation, beating a human checker champion in 1961. This achievement proved that machines could exhibit intelligent behavior and learn on their own.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://webdocs.cs.ualberta.ca/~chinook/project/legacy.html" target="_blank" class="button">Read About His Legacy</a>
+                <a href="https://www.youtube.com/watch?v=4h0QpNWrPbg" target="_blank" class="button">Watch a Video on the Program</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Coining "Machine Learning" -->
+    <div id="slide3" class="slide bg-slide-3">
+        <div class="max-w-4xl p-8 bg-white rounded-2xl shadow-xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">The Term "Machine Learning"</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                In his seminal 1959 paper, "Some Studies in Machine Learning Using the Game of Checkers," Samuel coined the very term we use today: **"machine learning."**
+            </p>
+            <p class="text-lg italic text-gray-600 leading-relaxed mb-8">
+                His core idea was that a computer could be programmed to "learn to play a better game of checkers than can be played by the person who wrote the program." This simple statement encapsulates the fundamental goal of machine learning.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://en.wikipedia.org/wiki/Arthur_Samuel_(computer_scientist)" target="_blank" class="button">Explore His Biography</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: His Lasting Impact -->
+    <div id="slide4" class="slide bg-slide-4">
+        <div class="max-w-4xl p-8 bg-white rounded-2xl shadow-xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">A Lasting Impact</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Arthur Samuel's work had a profound and lasting impact beyond his checkers program. His focus on "non-numerical computation" was so influential that it helped shape the instruction sets of early IBM computers.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                He paved the way for modern AI applications, from recommendation engines to self-driving cars. Today, his work is still studied by researchers and students as a foundational example of reinforcement learning and AI.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <a href="https://www.ibm.com/think/topics/machine-learning" target="_blank" class="button">Read More on Machine Learning</a>
+                <a href="https://www.computer.org/profiles/arthur-samuel" target="_blank" class="button">IEEE Profile</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
