@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fei-Fei Li: A Pioneer of Human-Centered AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            height: 100vh;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            display: none;
+        }
+        .slide.active {
+            display: flex;
+        }
+        .dot {
+            transition: all 0.3s ease;
+        }
+        .dot.active {
+            background-color: #2621b5; /* purple now */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Main Container for Slides -->
+    <div id="slides-container" class="relative overflow-hidden w-full h-screen">
+
+        <!-- Slide 1: Early Life -->
+        <div id="slide-1" class="slide active flex-col justify-center items-center px-4 md:px-8 py-16 text-center">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12 transform transition-transform duration-500 ease-in-out">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Fei-Fei Li: Early Life & Journey</h1>
+                <div class="md:flex md:space-x-8 md:items-center">
+                    <div class="md:w-1/2 flex-shrink-0 mb-6 md:mb-0">
+                        <img src="https://placehold.co/600x400/1F2937/FFFFFF?text=Early+Life" alt="Image of a young student studying" class="w-full h-auto rounded-xl shadow-lg">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-lg md:text-xl text-gray-700 mb-6">
+                            Born in Beijing, China, Fei-Fei Li's journey is a powerful story of perseverance. At the age of 16, she immigrated with her parents to the United States, settling in Parsippany, New Jersey. She overcame language barriers and financial hardship, often working in a dry cleaner's shop with her parents while attending high school. Her brilliance shone through, earning her a scholarship to Princeton University.
+                        </p>
+                        <p class="text-lg md:text-xl text-gray-700 mb-6">
+                            This period of her life deeply influenced her perspective, instilling in her the belief that technology should serve humanity. After graduating with a physics degree from Princeton, she pursued her passion for AI and computer vision, earning a Ph.D. from Caltech.
+                        </p>
+                        <a href="https://www.momentoflift.com/the-worlds-i-see" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-3 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-200">
+                            Read Her Memoir
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Major Contributions -->
+        <div id="slide-2" class="slide flex-col justify-center items-center px-4 md:px-8 py-16 text-center">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12 transform transition-transform duration-500 ease-in-out">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">The ImageNet Revolution</h2>
+                <div class="md:flex md:space-x-8 md:items-center">
+                    <div class="md:w-1/2 flex-shrink-0 mb-6 md:mb-0">
+                        <img src="https://placehold.co/600x400/D1D5DB/111827?text=ImageNet+Dataset" alt="Abstract image representing a massive image dataset" class="w-full h-auto rounded-xl shadow-lg">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-lg md:text-xl text-gray-700 mb-6">
+                            Dr. Li's most celebrated contribution is the creation of ImageNet. Starting in 2007, she and her team at Princeton and Stanford built a massive dataset of over 14 million images, manually labeled by human annotators. This project aimed to provide a dataset large and diverse enough to train robust visual recognition models.
+                        </p>
+                        <p class="text-lg md:text-xl text-gray-700 mb-6">
+                            The subsequent ImageNet Large Scale Visual Recognition Challenge (ILSVRC) became a pivotal event. In 2012, a team led by Geoffrey Hinton and Alex Krizhevsky used a deep neural network (AlexNet) to dramatically outperform all other entries, marking a "big bang" moment for deep learning and igniting the modern AI boom.
+                        </p>
+                        <a href="https://www.ted.com/talks/fei_fei_li_how_we_re_teaching_computers_to_understand_pictures" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-3 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-200">
+                            Watch Her TED Talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Influence on Modern AI -->
+        <div id="slide-3" class="slide flex-col justify-center items-center px-4 md:px-8 py-16 text-center">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12 transform transition-transform duration-500 ease-in-out">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Pioneering Human-Centered AI</h2>
+                <div class="md:flex md:space-x-8 md:items-center">
+                    <div class="md:w-1/2 flex-shrink-0 mb-6 md:mb-0">
+                        <img src="https://placehold.co/600x400/9CA3AF/FFFFFF?text=Human-Centered+AI" alt="Image of diverse people interacting with technology" class="w-full h-auto rounded-xl shadow-lg">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-lg md:text-xl text-gray-700 mb-6">
+                            Beyond ImageNet, Dr. Li's influence extends to shaping the ethical direction of AI. As the co-founder and co-director of the Stanford Institute for Human-Centered AI (HAI), she advocates for an approach to AI development that prioritizes human well-being.
+                        </p>
+                        <p class="text-lg md:text-xl text-gray-700 mb-6">
+                            She believes that AI should not replace humans, but rather augment human capabilities and foster a more equitable society. Her work also includes founding AI4ALL, a non-profit organization dedicated to increasing diversity and inclusion in AI education.
+                        </p>
+                        <a href="https://hai.stanford.edu/" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-3 bg-indigo-600 text-white font-semibold rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-200">
+                            Explore Stanford HAI
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons and Dots -->
+    <div class="fixed bottom-8 left-1/2 -translate-x-1/2 flex items-center space-x-4 z-50">
+        <button id="prevBtn" class="px-6 py-3 bg-white text-gray-800 rounded-full shadow-lg opacity-50 cursor-not-allowed transition-opacity duration-300 hover:bg-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+
+        <div id="dots-container" class="flex space-x-2">
+            <div id="dot-1" class="dot w-3 h-3 rounded-full bg-gray-400 active"></div>
+            <div id="dot-2" class="dot w-3 h-3 rounded-full bg-gray-400"></div>
+            <div id="dot-3" class="dot w-3 h-3 rounded-full bg-gray-400"></div>
+        </div>
+
+        <button id="nextBtn" class="px-6 py-3 bg-white text-gray-800 rounded-full shadow-lg transition-colors duration-300 hover:bg-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const dots = document.querySelectorAll('.dot');
+            let currentSlide = 0;
+
+            const updateSlideVisibility = () => {
+                slides.forEach((slide, index) => {
+                    if (index === currentSlide) {
+                        slide.classList.add('active');
+                    } else {
+                        slide.classList.remove('active');
+                    }
+                });
+                dots.forEach((dot, index) => {
+                    if (index === currentSlide) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+                
+                prevBtn.classList.toggle('opacity-50', currentSlide === 0);
+                prevBtn.classList.toggle('cursor-not-allowed', currentSlide === 0);
+                nextBtn.classList.toggle('opacity-50', currentSlide === slides.length - 1);
+                nextBtn.classList.toggle('cursor-not-allowed', currentSlide === slides.length - 1);
+            };
+
+            const goToSlide = (slideIndex) => {
+                currentSlide = slideIndex;
+                updateSlideVisibility();
+            };
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    goToSlide(currentSlide + 1);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    goToSlide(currentSlide - 1);
+                }
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    goToSlide(index);
+                });
+            });
+
+            updateSlideVisibility();
+        });
+    </script>
+</body>
+</html>
