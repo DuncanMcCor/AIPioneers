@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Boole: An AI Pioneer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            transition: background-color 0.5s ease;
+        }
+        .slide-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            padding: 2rem;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .active-slide {
+            display: flex;
+        }
+        .slide-content h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+        .slide-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #374151;
+            margin-top: 1rem;
+        }
+        .slide-content p {
+            font-size: 1.125rem;
+            color: #4b5563;
+            line-height: 1.75rem;
+            margin-top: 1.5rem;
+        }
+        .resource-btn {
+            background-color: #4f46e5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .resource-btn:hover {
+            background-color: #4338ca;
+            transform: translateY(-2px);
+        }
+        .resource-btn-secondary {
+            background-color: #d1d5db;
+            color: #4b5563;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .resource-btn-secondary:hover {
+            background-color: #9ca3af;
+            transform: translateY(-2px);
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .nav-btn {
+            background-color: #4b5563;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .nav-btn:disabled {
+            background-color: #e5e7eb;
+            color: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .nav-btn:hover:enabled {
+            background-color: #1f2937;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="p-8 md:p-16 flex flex-col items-center justify-center min-h-screen">
+
+    <div id="presentation-container" class="bg-white rounded-3xl shadow-xl max-w-4xl w-full p-8 md:p-12 lg:p-16">
+
+        <!-- Slide 1: Title Slide -->
+        <div id="slide-0" class="slide-container active-slide">
+            <div class="slide-content">
+                <h1 class="text-4xl lg:text-5xl font-extrabold mb-4">George Boole: An AI Pioneer</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Discover the life and legacy of the mathematician who laid the foundation for the digital age.</p>
+                <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Portrait%20of%20George%20Boole" alt="Portrait of George Boole" class="mt-8 mx-auto rounded-xl shadow-lg">
+            </div>
+        </div>
+
+        <!-- Slide 2: Early Life -->
+        <div id="slide-1" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-3xl lg:text-4xl font-bold">Early Life & Education</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mt-4">Born in Lincoln, England, in 1815, Boole was a self-taught genius. He came from a humble background and received no formal university education, yet his passion for mathematics was so profound he taught himself multiple languages and advanced calculus.</p>
+                <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Lincoln%2C%20England" alt="Image of Lincoln, England" class="mt-8 mx-auto rounded-xl shadow-lg">
+                <div class="flex flex-col md:flex-row gap-4 mt-8 justify-center">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="resource-btn block text-center">Watch a video on Boole's life</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Major Contributions -->
+        <div id="slide-2" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-3xl lg:text-4xl font-bold">The Laws of Thought</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mt-4">In his groundbreaking 1854 book, "An Investigation of the Laws of Thought," Boole introduced a new type of algebra. **Boolean algebra** represents logical statements with two values: **True (1)** and **False (0)**. His system used operators like **AND** ($x \cdot y$), **OR** ($x+y$), and **NOT** ($\bar{x}$).</p>
+                <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Book%20Cover%20Placeholder" alt="Representation of Boolean algebra" class="mt-8 mx-auto rounded-xl shadow-lg">
+                <div class="flex flex-col md:flex-row gap-4 mt-8 justify-center">
+                    <a href="https://www.youtube.com/watch?v=F0S1_076r2w" target="_blank" class="resource-btn block text-center">See Boolean Algebra in Action</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Contribution to AI -->
+        <div id="slide-3" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-3xl lg:text-4xl font-bold">The Foundation of AI</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mt-4">While Boole's work predates modern AI, it is its conceptual bedrock. Every single decision, calculation, and piece of data in an AI model—from a simple chatbot to a complex neural network—is processed as binary code (1s and 0s). Boole's system provided the mathematical framework for this binary logic.</p>
+                <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Digital%20Circuitry" alt="Diagram of a logic circuit" class="mt-8 mx-auto rounded-xl shadow-lg">
+                <div class="flex flex-col md:flex-row gap-4 mt-8 justify-center">
+                    <a href="https://www.youtube.com/watch?v=fXpD-L2_1yQ" target="_blank" class="resource-btn block text-center">Explore the link between Logic and AI</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: The Legacy -->
+        <div id="slide-4" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-3xl lg:text-4xl font-bold">An Enduring Legacy</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mt-4">Boole's work is the reason we can automate complex logical tasks. His genius transformed logic from a philosophical concept into a practical mathematical tool. He is rightly considered the "Father of the Digital Age" and a foundational pioneer of artificial intelligence.</p>
+                <img src="https://placehold.co/400x300/e5e7eb/4b5563?text=Boole%27s%20Legacy" alt="Image representing technological progress" class="mt-8 mx-auto rounded-xl shadow-lg">
+                <div class="flex flex-col md:flex-row gap-4 mt-8 justify-center">
+                    <a href="https://www.jstor.org/stable/20121110" target="_blank" class="resource-btn-secondary block text-center">Read a historical article on Boole</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons mt-8">
+            <button id="prev-btn" class="nav-btn" disabled>Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+        </div>
+
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide-container');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active-slide'));
+            // Show the current slide
+            slides[index].classList.add('active-slide');
+            // Update button states
+            prevBtn.disabled = index === 0;
+            nextBtn.disabled = index === slides.length - 1;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        });
+
+        // Initial setup
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
