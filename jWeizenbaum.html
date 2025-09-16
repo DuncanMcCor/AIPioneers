@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pioneer: Joseph Weizenbaum and ELIZA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0a0a8c;
+        }
+        .slide-container {
+            width: 90%;
+            max-width: 800px;
+            height: 90vh;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .slide {
+            display: none;
+            flex-grow: 1;
+        }
+        .slide.active {
+            display: block;
+        }
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+        }
+        .slide img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+        }
+        .navigation-buttons button {
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .navigation-buttons button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .link-button {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            margin-top: 1rem;
+        }
+        .link-button:hover {
+            background-color: #155bb5;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center p-4">
+
+    <div class="slide-container">
+
+        <!-- Slide 1: Introduction to Weizenbaum -->
+        <div id="slide-1" class="slide active">
+            <div class="slide-content">
+                <h1 class="text-4xl font-bold text-gray-800 mb-6">Joseph Weizenbaum: A Pioneer with a Conscience</h1>
+                <img src="https://placehold.co/400x400/3498db/ffffff?text=Joseph+Weizenbaum" alt="Portrait of Joseph Weizenbaum" class="w-64 h-64 object-cover rounded-full mb-6">
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Joseph Weizenbaum (1923-2008) was a German-American computer scientist and a professor at MIT. He is widely considered a pioneer in the field of artificial intelligence, but his most enduring legacy comes from his later role as a fierce and prescient critic of the technology he helped create.
+                </p>
+                <p class="text-gray-500 text-sm">Born in Berlin, he fled Nazi Germany with his family in 1935, a pivotal experience that would later shape his views on technology and humanity.</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: The ELIZA Program -->
+        <div id="slide-2" class="slide">
+            <div class="slide-content">
+                <h1 class="text-4xl font-bold text-gray-800 mb-6">The ELIZA Program (1964-1967)</h1>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    ELIZA was one of the first programs to perform natural language processing. It simulated a Rogerian psychotherapist by using simple pattern matching and substitution rules. It would often rephrase a user's statement as a question, creating a convincing illusion of understanding.
+                </p>
+                <ul class="list-disc list-inside text-left text-gray-700 mb-4 self-start mx-auto w-full max-w-md">
+                    <li>**Keyword Detection:** ELIZA scanned for keywords like "mother" or "I am."</li>
+                    <li>**Pattern Matching:** It would match the input sentence to a pre-defined pattern.</li>
+                    <li>**Substitution:** The program would then apply a substitution rule to create a response. For example, "I am sad" might become "Why do you think you are sad?"</li>
+                </ul>
+                <a href="https://web.njit.edu/~ronkowit/eliza.html" target="_blank" class="link-button">Try a Classic ELIZA Demo</a>
+            </div>
+        </div>
+
+        <!-- Slide 3: The ELIZA Effect & Weizenbaum's Critique -->
+        <div id="slide-3" class="slide">
+            <div class="slide-content">
+                <h1 class="text-4xl font-bold text-gray-800 mb-6">The "ELIZA Effect" and His Warning</h1>
+                <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                    Weizenbaum was shocked when users began to confide in ELIZA, even when they knew it was just a simple program. This phenomenon, now known as the "ELIZA Effect," is the tendency to unconsciously attribute human-like understanding and emotions to a machine.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    This observation led him to write his influential 1976 book, **"Computer Power and Human Reason."** In it, he argued that while computers are powerful tools for calculation, they lack the empathy, wisdom, and judgment necessary for human affairs. He warned that we should not delegate tasks that require human qualities to machines.
+                </p>
+                <a href="https://www.youtube.com/watch?v=IZejhE85_YY" target="_blank" class="link-button">Watch an Interview with Weizenbaum</a>
+            </div>
+        </div>
+
+        <!-- Slide 4: Modern Day Influence & Legacy -->
+        <div id="slide-4" class="slide">
+            <div class="slide-content">
+                <h1 class="text-4xl font-bold text-gray-800 mb-6">ELIZA's Legacy in Modern AI</h1>
+                <img src="https://placehold.co/400x250/d4d4d4/000000?text=Chatbots+and+AI" alt="Illustration of modern chatbots">
+                <p class="text-lg text-gray-700 leading-relaxed mt-6 mb-4">
+                    ELIZA is the "great-grandmother" of modern chatbots and conversational AI. Its simple, scripted approach paved the way for more sophisticated programs, but Weizenbaum's core ethical questions remain more relevant than ever with the rise of systems like ChatGPT.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    His work reminds us to be vigilant about the power of technology and to critically examine what we are willing to hand over to machines, lest we lose sight of what makes us truly human.
+                </p>
+                <a href="https://www.cprime.com/resources/blog/lessons-and-warnings-from-the-original-chatbot-eliza/" target="_blank" class="link-button">Read About ELIZA's Modern Legacy</a>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button id="prev-btn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 transition-transform duration-200 ease-in-out" style="visibility: hidden;">Previous</button>
+            <button id="next-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-transform duration-200 ease-in-out">Next</button>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            let currentSlideIndex = 0;
+
+            function updateSlide() {
+                slides.forEach((slide, index) => {
+                    slide.classList.remove('active');
+                    if (index === currentSlideIndex) {
+                        slide.classList.add('active');
+                    }
+                });
+
+                prevBtn.style.visibility = currentSlideIndex === 0 ? 'hidden' : 'visible';
+                nextBtn.style.visibility = currentSlideIndex === slides.length - 1 ? 'hidden' : 'visible';
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlideIndex < slides.length - 1) {
+                    currentSlideIndex++;
+                    updateSlide();
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlideIndex > 0) {
+                    currentSlideIndex--;
+                    updateSlide();
+                }
+            });
+
+            updateSlide(); // Initial call to set up the first slide
+        });
+    </script>
+
+</body>
+</html>
