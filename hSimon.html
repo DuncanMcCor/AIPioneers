@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Architect of AI and Rationality: A Herbert Simon Presentation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        .slide {
+            display: none;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .bg-gradient-custom {
+            background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Presentation Container -->
+    <div id="presentation-container" class="relative bg-white rounded-3xl shadow-2xl overflow-hidden w-full max-w-5xl h-[85vh] transition-all duration-500 transform scale-95 md:scale-100">
+
+        <!-- Slide Content Area -->
+        <div id="slides-container" class="w-full h-full flex transition-transform duration-500 ease-in-out">
+
+            <!-- Slide 1: Early Life and Education -->
+            <div id="slide-1" class="slide active flex-shrink-0 w-full h-full p-8 md:p-12 flex flex-col justify-center items-center text-center bg-white">
+                <div class="max-w-3xl space-y-6">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">Herbert A. Simon: The Architect of AI and Rationality</h1>
+                    <p class="text-xl md:text-2xl text-gray-500 font-medium">A Journey Through the Mind of a Polymath</p>
+                    <img src="https://placehold.co/800x450/e5e7eb/6b7280?text=Herbert+Simon" alt="Portrait of a young Herbert Simon" class="w-full h-auto rounded-xl shadow-lg mt-8">
+                    <p class="text-gray-700 text-lg md:text-xl">Born in 1916, Herbert Simon was a true intellectual pioneer. From an early age, he showed a keen interest in both the natural sciences and human behavior, a curiosity that would define his groundbreaking, interdisciplinary work across multiple fields.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Major Contributions -->
+            <div id="slide-2" class="slide flex-shrink-0 w-full h-full p-8 md:p-12 flex flex-col items-center justify-center bg-gray-50">
+                <div class="max-w-3xl space-y-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center">Breaking the Mold: From Economics to Psychology</h2>
+                    
+                    <!-- Bounded Rationality Section -->
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-gray-200">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Bounded Rationality</h3>
+                        <p class="text-lg text-gray-600">Simon challenged the traditional economic view of "perfect rationality." He proposed that human decisions are limited by available information, cognitive capacity, and time. This concept, known as Bounded Rationality, led to the Nobel Prize in Economic Sciences in 1978 and laid the foundation for behavioral economics.</p>
+                        <a href="https://thedecisionlab.com/biases/bounded-rationality" target="_blank" class="inline-flex items-center px-6 py-3 mt-4 text-white bg-blue-600 rounded-full font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-md">
+                            Learn More About Bounded Rationality
+                        </a>
+                    </div>
+                    
+                    <!-- Problem Solving Section -->
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-gray-200">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">The Science of Problem Solving</h3>
+                        <p class="text-lg text-gray-600">Alongside Allen Newell, Simon developed the "General Problem Solver," a program designed to simulate human problem-solving. This work pioneered the use of heuristics (rules of thumb) in computer science, treating problem-solving as a process of searching through a "problem space" to find a solution.</p>
+                        <a href="https://www.britannica.com/science/General-Problem-Solver" target="_blank" class="inline-flex items-center px-6 py-3 mt-4 text-white bg-blue-600 rounded-full font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-md">
+                            Watch a Video on the General Problem Solver
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Contributions to AI -->
+            <div id="slide-3" class="slide flex-shrink-0 w-full h-full p-8 md:p-12 flex flex-col items-center justify-center bg-white">
+                <div class="max-w-3xl space-y-6">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center">Pioneering Artificial Intelligence</h2>
+                    <img src="https://placehold.co/800x450/e5e7eb/6b7280?text=Logic+Theorist+Illustration" alt="Illustration of the Logic Theorist program" class="w-full h-auto rounded-xl shadow-lg">
+                    <p class="text-gray-700 text-lg md:text-xl text-center">Simon is widely considered one of the founding fathers of AI. In 1956, with Allen Newell and Cliff Shaw, he created the "Logic Theorist," a program that could prove mathematical theorems. This was a monumental achievement and the first program to demonstrate "thinking" in a machine, paving the way for the field of artificial intelligence.</p>
+                    <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-8 justify-center">
+                        <a href="https://www.youtube.com/watch?v=uTll7u8PavQ" target="_blank" class="inline-flex items-center px-6 py-3 text-white bg-purple-600 rounded-full font-semibold hover:bg-purple-700 transition duration-300 transform hover:scale-105 shadow-md">
+                            Watch a Video on the Logic Theorist
+                        </a>
+                        <a href="https://commons.wikimedia.org/wiki/File:Herbert_Simon_close-up_(cropped).jpg" target="_blank" class="inline-flex items-center px-6 py-3 text-white bg-purple-600 rounded-full font-semibold hover:bg-purple-700 transition duration-300 transform hover:scale-105 shadow-md">
+                            View a Portrait of Simon
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Influence on Modern AI -->
+            <div id="slide-4" class="slide flex-shrink-0 w-full h-full p-8 md:p-12 flex flex-col items-center justify-center bg-gray-50">
+                <div class="max-w-3xl space-y-6 text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">A Lasting Legacy</h2>
+                    <p class="text-gray-700 text-lg md:text-xl">Simon's work continues to influence modern AI systems. His emphasis on symbolic reasoning, heuristic search, and the "information processing" view of the mind laid the groundwork for entire subfields of AI research. His predictions on the future of machines and the importance of data remain incredibly relevant today.</p>
+                    <img src="https://placehold.co/800x450/e5e7eb/6b7280?text=Modern+AI+Illustration" alt="Illustration of modern AI concepts" class="w-full h-auto rounded-xl shadow-lg">
+                    <p class="text-gray-700 text-lg md:text-xl font-semibold">"Machines will be capable of doing any work a man can do." - Herbert Simon, 1965</p>
+                    <div class="mt-8">
+                        <a href="https://simoninstitute.ch/blog/post/how-computers-will-continue-to-shape-the-world-herbert-a-simon-video-transcript" target="_blank" class="inline-flex items-center px-6 py-3 text-white bg-green-600 rounded-full font-semibold hover:bg-green-700 transition duration-300 transform hover:scale-105 shadow-md">
+                            Watch an Interview with Herbert Simon
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-4">
+            <button id="prev-btn" class="p-3 bg-gray-200 text-gray-700 rounded-full shadow-lg hover:bg-gray-300 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button id="next-btn" class="p-3 bg-gray-900 text-white rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Presentation Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    slide.style.display = 'none';
+                    if (i === index) {
+                        slide.classList.add('active');
+                        slide.style.display = 'flex';
+                    }
+                });
+                updateButtons();
+            }
+
+            function updateButtons() {
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === slides.length - 1;
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initial setup
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
