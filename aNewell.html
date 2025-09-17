@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Newell: The Architect of AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e5e7eb;
+        }
+        .slide {
+            height: calc(100vh - 4rem);
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        .slide-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 900px;
+            width: 100%;
+        }
+        .button-group {
+            position: absolute;
+            bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+        .nav-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .link-button {
+            background-color: #4a90e2;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .link-button:hover {
+            background-color: #3b7ad1;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gray-200 flex flex-col items-center justify-center p-8">
+
+    <!-- Slide Container -->
+    <div id="presentation-container" class="relative w-full max-w-5xl h-[calc(100vh-4rem)] flex justify-center items-center">
+
+        <!-- Slide 1: Title Slide -->
+        <div id="slide-1" class="slide" style="display: flex;">
+            <div class="slide-content">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 leading-tight mb-4">Allen Newell: The Architect of AI</h1>
+                <p class="text-xl md:text-2xl text-gray-600">Pioneer of Artificial Intelligence and Cognitive Science</p>
+                <div class="mt-8 flex justify-center">
+                    <img src="https://digitalcollections.library.cmu.edu/system/files/nodes/393398/cmu-image-4740-001.jpg" alt="A photograph of Allen Newell" class="rounded-xl shadow-lg w-full max-w-sm md:max-w-md">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Early Life -->
+        <div id="slide-2" class="slide">
+            <div class="slide-content text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Early Life and Career</h2>
+                <p class="text-gray-700 text-lg md:text-xl leading-relaxed">
+                    Born on March 19, 1927, Allen Newell was an American computer scientist and cognitive psychologist. He began his career at the RAND Corporation, where he worked on logistical and systems analysis problems. It was here that he began his groundbreaking collaboration with Herbert A. Simon, a partnership that would define much of the early history of artificial intelligence.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 3: Major Contributions -->
+        <div id="slide-3" class="slide">
+            <div class="slide-content text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Major Contributions</h2>
+                <p class="text-gray-700 text-lg md:text-xl mb-4 leading-relaxed">
+                    Newell's work laid the foundation for symbolic AI. His key contributions include:
+                </p>
+                <ul class="list-disc list-inside space-y-3 text-gray-700 text-lg md:text-xl mb-6">
+                    <li>
+                        **Logic Theorist (1956):** The first program designed to mimic human problem-solving by proving mathematical theorems.
+                    </li>
+                    <li>
+                        **General Problem Solver (GPS) (1957):** A more general-purpose program that used a technique called "means-ends analysis" to solve problems by reducing the difference between the current state and the goal state.
+                    </li>
+                    <li>
+                        **Information Processing Language (IPL):** A family of programming languages developed specifically for AI research, which pioneered key concepts like list processing.
+                    </li>
+                </ul>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="https://www.youtube.com/watch?v=vpfAOBbtGTo" target="_blank" class="link-button">
+                        Watch an interview with Newell on the Logic Theorist
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/General_Problem_Solver" target="_blank" class="link-button">
+                        Learn more about the GPS
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: The Physical Symbol System Hypothesis -->
+        <div id="slide-4" class="slide">
+            <div class="slide-content text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">The Physical Symbol System Hypothesis</h2>
+                <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-6">
+                    In 1976, Newell and Simon proposed a fundamental concept that became a cornerstone of AI research: the Physical Symbol System Hypothesis. It states that "A physical symbol system has the necessary and sufficient means for general intelligent action." This idea posits that any system, human or machine, that can manipulate physical patterns (symbols) to create and process structures, can achieve intelligence.
+                </p>
+                <div class="flex justify-center">
+                    <a href="https://en.wikipedia.org/wiki/Physical_symbol_system" target="_blank" class="link-button">
+                        Explore the Hypothesis
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Influence on Modern AI -->
+        <div id="slide-5" class="slide">
+            <div class="slide-content text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Lasting Influence on Modern AI</h2>
+                <p class="text-gray-700 text-lg md:text-xl leading-relaxed mb-6">
+                    Newell's work continues to resonate in modern AI and cognitive science. His focus on symbolic representation and heuristic search is foundational to many algorithms used today. He was also a key figure in the development of the Soar cognitive architecture, a model of general intelligence that continues to be a subject of research. In 1975, he and Herbert Simon were awarded the Turing Award, computer science's highest honor.
+                </p>
+                <div class="flex justify-center">
+                    <a href="https://amturing.acm.org/award_winners/newell_3167755.cfm" target="_blank" class="link-button">
+                        Read his Turing Award Lecture
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="button-group">
+            <button id="prev-button" class="nav-button bg-gray-400 text-white hover:bg-gray-500 hidden">Previous</button>
+            <button id="next-button" class="nav-button bg-blue-500 text-white hover:bg-blue-600">Next</button>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevButton = document.getElementById('prev-button');
+            const nextButton = document.getElementById('next-button');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.style.display = (i === index) ? 'flex' : 'none';
+                });
+
+                prevButton.classList.toggle('hidden', index === 0);
+                nextButton.classList.toggle('hidden', index === slides.length - 1);
+            }
+
+            prevButton.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            nextButton.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
