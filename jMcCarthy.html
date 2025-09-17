@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John McCarthy: A Pioneer of AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .link-button {
+            transition: all 0.3s ease;
+        }
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Custom image styling for rounded corners */
+        .image-container img {
+            border-radius: 1.5rem;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Presentation Container -->
+    <div class="relative bg-white rounded-3xl shadow-xl w-full max-w-5xl h-full md:h-[600px] flex flex-col p-8 transition-all duration-500 overflow-hidden">
+
+        <!-- Slide Content -->
+        <div id="slides-container" class="relative flex-1">
+            
+            <!-- Slide 1: Early Life -->
+            <div id="slide-1" class="slide active flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 h-full">
+                <div class="w-full md:w-1/2 image-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/John_McCarthy_Stanford.jpg" alt="A portrait of John McCarthy" class="rounded-3xl w-full h-auto max-h-80 md:max-h-full object-cover shadow-lg" onerror="this.onerror=null; this.src='https://placehold.co/500x500/A0B9D1/ffffff?text=John+McCarthy';">
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col space-y-4">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">1. Early Life and Education</h2>
+                    <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+                        Born in Boston in 1927, John McCarthy was a mathematical prodigy from a young age. He earned his bachelor's degree in mathematics from the California Institute of Technology (Caltech) in 1948 and went on to receive his Ph.D. in mathematics from Princeton University in 1951. His early academic pursuits laid the groundwork for his revolutionary contributions to computer science and artificial intelligence.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Coining "Artificial Intelligence" -->
+            <div id="slide-2" class="slide flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 h-full">
+                <div class="w-full md:w-1/2 image-container">
+                    <img src="https://placehold.co/500x500/C5E0D0/374151?text=Dartmouth+AI+Conference+1956" alt="An illustration representing the 1956 Dartmouth Conference." class="rounded-3xl w-full h-auto max-h-80 md:max-h-full object-cover shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col space-y-4">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">2. The Birth of AI</h2>
+                    <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+                        In 1955, John McCarthy penned a proposal for a summer workshop at Dartmouth College. In this document, he introduced the term "Artificial Intelligence" for the first time, defining the field's core goal as "to proceed on the basis of the conjecture that every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it." The 1956 Dartmouth Summer Research Project on Artificial Intelligence is widely considered the founding event of the field.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4">
+                        <a href="https://www.youtube.com/watch?v=QuNa_h30EDA" target="_blank" class="link-button bg-blue-600 text-white font-semibold py-2 px-6 rounded-full text-center hover:bg-blue-700 transition duration-300">
+                            Watch Video on the Dartmouth Conference
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: LISP and Logic -->
+            <div id="slide-3" class="slide flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 h-full">
+                <div class="w-full md:w-1/2 image-container">
+                    <img src="https://placehold.co/500x500/D0A0B9/374151?text=LISP+Code+Representation" alt="An illustration of LISP code with parentheses" class="rounded-3xl w-full h-auto max-h-80 md:max-h-full object-cover shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col space-y-4">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">3. LISP and Computer Science</h2>
+                    <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+                        McCarthy's influence extends far beyond coining a term. He invented the LISP (LISt Processing) programming language in 1958, which became the second-oldest high-level programming language still in use today. LISP was revolutionary for its time, designed to be symbolic rather than numeric, making it ideal for AI research. He also pioneered the concept of garbage collection, an automatic memory management feature now fundamental to languages like Java and Python.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4">
+                        <a href="https://www.youtube.com/watch?v=INUHCQST7CU" target="_blank" class="link-button bg-blue-600 text-white font-semibold py-2 px-6 rounded-full text-center hover:bg-blue-700 transition duration-300">
+                            Learn about LISP in 100 Seconds
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Enduring Influence -->
+            <div id="slide-4" class="slide flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12 h-full">
+                <div class="w-full md:w-1/2 image-container">
+                    <img src="https://placehold.co/500x500/A0B9D1/374151?text=Cloud+Computing+Illustration" alt="An illustration of a modern cloud computing data center." class="rounded-3xl w-full h-auto max-h-80 md:max-h-full object-cover shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col space-y-4">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">4. Lasting Legacy</h2>
+                    <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+                        McCarthy's concept of time-sharing, which allows multiple users to access a single computer simultaneously, laid the conceptual groundwork for modern cloud computing. His work on formal logic and commonsense reasoning remains a central pillar of AI research. A recipient of the prestigious Turing Award, John McCarthy is remembered not only as the man who named a field, but as a visionary whose foundational ideas continue to shape the digital world.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mt-4">
+                        <a href="https://www.youtube.com/watch?v=Q07PhW5sCEk" target="_blank" class="link-button bg-blue-600 text-white font-semibold py-2 px-6 rounded-full text-center hover:bg-blue-700 transition duration-300">
+                            See a 1963 Film on Time-sharing
+                        </a>
+                        <a href="https://ethw.org/Oral-History:John_McCarthy" target="_blank" class="link-button bg-blue-600 text-white font-semibold py-2 px-6 rounded-full text-center hover:bg-blue-700 transition duration-300">
+                            Read an Oral History Interview
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-between mt-8 md:mt-12">
+            <button id="prev-btn" class="bg-gray-200 text-gray-800 font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed">
+                &larr; Previous
+            </button>
+            <button id="next-btn" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                Next &rarr;
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    if (i === index) {
+                        slide.classList.add('active');
+                    }
+                });
+                updateButtons(index);
+            }
+
+            function updateButtons(index) {
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === slides.length - 1;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initial state
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
