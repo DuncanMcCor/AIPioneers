@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An AI Pioneer: Ashish Vaswani</title>
+    <!-- Use a modern font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .bg-card {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .bg-card:hover {
+            transform: translateY(-5px);
+        }
+        .nav-button {
+            transition: background-color 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #1a56db;
+        }
+        .content-link {
+            color: #3b82f6;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        .content-link:hover {
+            color: #2563eb;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 md:p-8">
+
+    <!-- Presentation Container -->
+    <div id="presentation-container" class="w-full max-w-4xl h-full flex flex-col items-center">
+
+        <!-- Slides Wrapper -->
+        <div id="slides-wrapper" class="relative w-full p-6 md:p-12 text-center bg-card">
+
+            <!-- Slide 1: Title -->
+            <div id="slide-1" class="slide active flex-col justify-center items-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4 md:mb-6">An AI Pioneer</h1>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700">The Legacy of Ashish Vaswani</h2>
+                <div class="mt-8 mb-8 md:mt-12 md:mb-12">
+                    <img src="https://placehold.co/400x400/1e40af/ffffff?text=Ashish+Vaswani" alt="Placeholder image of Ashish Vaswani" class="rounded-full mx-auto shadow-lg w-40 h-40 md:w-64 md:h-64 object-cover">
+                </div>
+                <p class="text-base md:text-lg text-gray-600 mb-6 max-w-prose mx-auto">
+                    Explore the life and groundbreaking work of the computer scientist who co-invented the Transformer, the foundational architecture behind modern AI.
+                </p>
+            </div>
+
+            <!-- Slide 2: Early Life -->
+            <div id="slide-2" class="slide flex-col justify-center items-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Early Life & Education</h3>
+                <div class="mb-8 md:mb-12">
+                    <img src="https://placehold.co/400x250/1d4ed8/ffffff?text=Academic+Journey" alt="Illustration of books and a diploma" class="rounded-xl mx-auto shadow-lg w-full max-w-md h-auto">
+                </div>
+                <p class="text-base md:text-lg text-gray-700 max-w-prose mx-auto">
+                    Ashish Vaswani, an Indian-born computer scientist, began his academic journey in Oman and later in Nagpur, India. His path led him to pursue a B.Tech degree from the Birla Institute of Technology in Mesra, followed by a Ph.D. from the University of Southern California (USC). This strong foundation in computer science and mathematics set the stage for his future contributions to the field.
+                </p>
+            </div>
+
+            <!-- Slide 3: The Transformer -->
+            <div id="slide-3" class="slide flex-col justify-center items-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">The Transformer Model</h3>
+                <div class="mb-8 md:mb-12">
+                    <img src="https://placehold.co/400x250/1e40af/ffffff?text=The+Transformer+Model" alt="Diagram of a transformer model" class="rounded-xl mx-auto shadow-lg w-full max-w-md h-auto">
+                </div>
+                <p class="text-base md:text-lg text-gray-700 max-w-prose mx-auto">
+                    While working at Google Brain, Ashish Vaswani co-authored the seminal 2017 paper, <span class="font-bold italic">"Attention Is All You Need."</span> This paper introduced the Transformer model, a revolutionary architecture that relies entirely on "attention mechanisms," completely doing away with the need for recurrence and convolutions. This innovation allowed for much greater parallelization and faster training times.
+                </p>
+                <a href="https://arxiv.org/abs/1706.03762" target="_blank" class="content-link block mt-4 text-center">Read the Original Paper</a>
+                <a href="https://www.youtube.com/watch?v=ZXiruGOCn9s" target="_blank" class="content-link block mt-2 text-center">Watch a video on how Transformers work</a>
+            </div>
+
+            <!-- Slide 4: Impact & Legacy -->
+            <div id="slide-4" class="slide flex-col justify-center items-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Impact on Modern AI</h3>
+                <div class="mb-8 md:mb-12">
+                    <img src="https://placehold.co/400x250/1d4ed8/ffffff?text=Generative+AI" alt="Image of AI and brain connections" class="rounded-xl mx-auto shadow-lg w-full max-w-md h-auto">
+                </div>
+                <p class="text-base md:text-lg text-gray-700 max-w-prose mx-auto">
+                    The Transformer architecture has become the de facto standard for large language models (LLMs). It laid the foundation for models like Google's BERT and OpenAI's GPT series, which have driven the modern generative AI boom. Beyond language, it has been applied to a wide range of fields, including computer vision, drug discovery, and robotics, proving its versatility.
+                </p>
+            </div>
+
+            <!-- Slide 5: Current Work & Conclusion -->
+            <div id="slide-5" class="slide flex-col justify-center items-center">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">Conclusion & Future</h3>
+                <div class="mb-8 md:mb-12">
+                    <img src="https://placehold.co/400x250/1e40af/ffffff?text=Essential+AI+Logo" alt="Illustration of a company logo" class="rounded-xl mx-auto shadow-lg w-full max-w-md h-auto">
+                </div>
+                <p class="text-base md:text-lg text-gray-700 max-w-prose mx-auto">
+                    After his influential work at Google, Vaswani co-founded Essential AI. As its CEO, he continues to push the boundaries of AI research, focusing on an "open science frontier model" to solve complex problems and make powerful AI tools accessible to a wider community. His legacy as a pioneer of modern AI is cemented by his transformative contributions and his commitment to open research.
+                </p>
+                <a href="https://www.essential.ai/" target="_blank" class="content-link block mt-4 text-center">Visit Essential AI's Website</a>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-between items-center w-full max-w-md mt-6 md:mt-8">
+            <button id="prevBtn" class="nav-button bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-300 transform active:scale-95">
+                Previous
+            </button>
+            <span id="slide-counter" class="text-gray-500 font-medium text-sm md:text-base">1 of 5</span>
+            <button id="nextBtn" class="nav-button bg-blue-600 text-white font-semibold py-2 px-6 rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-300 transform active:scale-95">
+                Next
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Presentation Logic -->
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slide-counter');
+        let currentSlide = 0;
+
+        // Function to show a specific slide
+        function showSlide(index) {
+            // Hide all slides
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+            });
+            // Show the selected slide
+            slides[index].classList.add('active');
+            // Update the counter
+            slideCounter.textContent = `${index + 1} of ${slides.length}`;
+            // Handle button visibility
+            prevBtn.disabled = index === 0;
+            nextBtn.disabled = index === slides.length - 1;
+        }
+
+        // Event listeners for navigation buttons
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        });
+
+        // Initialize the presentation on page load
+        window.onload = () => {
+            showSlide(currentSlide);
+        };
+    </script>
+</body>
+</html>
