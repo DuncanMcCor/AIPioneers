@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Godfather of AI: Geoffrey Hinton</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1a202c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .slide-container {
+            position: relative;
+            background-color: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            padding: 3rem;
+            width: 100%;
+            max-width: 900px;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 3rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            height: 100%;
+            width: 100%;
+        }
+
+        .slide-content h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #2d3748;
+        }
+        
+        .slide-content h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        
+        .slide-content p {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            color: #4a5568;
+            max-width: 700px;
+        }
+
+        .slide-image {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 1rem;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 2rem;
+        }
+        
+        .nav-buttons button, .resource-button {
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            color: white;
+            background-color: #4a5568;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .nav-buttons button:hover, .resource-button:hover {
+            background-color: #2d3748;
+            transform: translateY(-2px);
+        }
+
+        .nav-buttons button:disabled {
+            background-color: #cbd5e0;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .slide-counter {
+            font-size: 1rem;
+            color: #718096;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center p-8">
+
+    <!-- Main Presentation Container -->
+    <div class="slide-container">
+        
+        <!-- Slide 1: Early Life and Education -->
+        <div id="slide1" class="slide active">
+            <div class="slide-content">
+                <h1 class="text-4xl">The Godfather of AI: Geoffrey Hinton</h1>
+                <h2 class="text-2xl mt-2">Early Life and Education</h2>
+                <img src="https://placehold.co/500x300/a0aec0/ffffff?text=Portrait+of+Hinton" alt="Conceptual portrait of Geoffrey Hinton" class="slide-image">
+                <p>Geoffrey Hinton, born in London in 1947, is a British-Canadian cognitive psychologist and computer scientist often called the "Godfather of AI" for his pioneering work. He earned his Ph.D. in Artificial Intelligence from the University of Edinburgh in 1978. During a time known as the "AI Winter," when enthusiasm for the field was low, Hinton was a lone voice championing the potential of neural networks.</p>
+                <a href="https://www.youtube.com/watch?v=NnA2OoH_NFY" target="_blank">
+                    <button class="resource-button">Watch a Recent Interview</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 2: Major Contributions -->
+        <div id="slide2" class="slide">
+            <div class="slide-content">
+                <h1 class="text-4xl">Major Contributions to AI</h1>
+                <h2 class="text-2xl mt-2">The Algorithm that Taught AI to Learn</h2>
+                <img src="https://placehold.co/500x300/a0aec0/ffffff?text=Neural+Network+Diagram" alt="Diagram of a neural network with backpropagation" class="slide-image">
+                <p>Hinton's most famous contribution is his work on the backpropagation algorithm. Co-authored in a 1986 paper, this algorithm provided an efficient way to train multi-layer neural networks. It works by calculating the error at the output layer and propagating it backward through the network, allowing the system to adjust its internal weights and improve its accuracy. This method is the foundational learning mechanism for virtually all modern deep learning models.</p>
+                <a href="https://visionbook.mit.edu/backpropagation.html" target="_blank">
+                    <button class="resource-button">See a Visual Explanation of Backpropagation</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 3: Influence on Modern AI -->
+        <div id="slide3" class="slide">
+            <div class="slide-content">
+                <h1 class="text-4xl">Influence on Modern AI</h1>
+                <h2 class="text-2xl mt-2">The Foundation of Today's Technology</h2>
+                <img src="https://placehold.co/500x300/a0aec0/ffffff?text=AI+Applications" alt="Images of AI applications like self-driving cars and voice assistants" class="slide-image">
+                <p>Hinton's work laid the groundwork for the deep learning revolution we see today. In 2012, his research team's neural network, AlexNet, won a major image recognition competition by a landslide, proving that deep learning was not just a theoretical concept. This breakthrough ignited a massive surge in AI research and investment, leading directly to the development of technologies like natural language processing (for tools like ChatGPT), advanced computer vision (for self-driving cars), and accurate speech recognition (for voice assistants).</p>
+                <a href="https://www.youtube.com/watch?v=giT0ytynSqg" target="_blank">
+                    <button class="resource-button">Learn About AI's Future and Risks</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Navigation Buttons and Counter -->
+    <div class="nav-buttons">
+        <button id="prevBtn" onclick="prevSlide()" disabled>Previous</button>
+        <span id="slideCounter" class="slide-counter">Slide 1 of 3</span>
+        <button id="nextBtn" onclick="nextSlide()">Next</button>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slideCounter');
+        let currentSlide = 0;
+
+        function updateSlide() {
+            slides.forEach((slide, index) => {
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            // Update button states
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+
+            // Update slide counter
+            slideCounter.textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        // Initial slide setup
+        updateSlide();
+    </script>
+</body>
+</html>
